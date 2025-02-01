@@ -1,0 +1,29 @@
+body {
+  background-color: #F2F3D9;
+  background-image: url(bg/bg.png);
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  height: 40%;
+  width: 50%;
+}
+  
+h1, h2 {
+  text-align: center;
+}
+  
+h3 {
+  text-align: center;
+}
+  
+p {
+  color: #25283D;
+}
+  
+.header-container {
+  justify-content: center; /* Center images horizontally */
+  padding: 10px; /* Add padding around the container */
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Add space between the paragraph and the image */
+}

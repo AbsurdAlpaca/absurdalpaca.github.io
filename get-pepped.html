@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script type="text/javascript">    
+    
+    var num = 0;
+    var percent_smaller = 0.25;
+    var max_images = 21;
+    function getRandomImage() {
+        num = Math.floor( Math.random() * max_images);
+        var img = 'pep' + num + '.jpg';
+        var img_height = window.innerHeight - (window.innerHeight * percent_smaller);
+        document.getElementById("randImage").innerHTML = ('<img src="' + 'pep/' + img + '" height="'+ img_height + '">');
+    
+    }
+    
+    function setImageSize() {
+        var img = 'pep' + num + '.jpg';
+        var img_height = window.innerHeight - (window.innerHeight * percent_smaller);
+        document.getElementById("randImage").innerHTML = ('<img src="' + 'pep/' + img + '" height="'+ img_height + '">');
+    }
+    </script>
+    <style>
+    body {
+        background-image: url('bg/bg.png');
+    }
+    .randImage {
+        justify-content: center; /* Center images horizontally */
+        align-items: center; /* Align items vertically in the center */
+    }
+    </style>
+    </head>
+    <body onload="getRandomImage()" onresize="setImageSize()">
+        <div style="display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('gifs/rainbow-line.gif');">
+            <img src="Pep/title.png"/>
+        </div>
+        <div id="randImage" 
+             style="display: flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url('gifs/rainbow-line.gif');"></div>
+                
+        <div style="display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('gifs/rainbow-line.gif');">
+            <img src="Pep/title.png"/>
+        </div>
+    </body>
+</html>
