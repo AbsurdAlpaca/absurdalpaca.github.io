@@ -22,7 +22,6 @@ p {
   
 .header-container {
   justify-content: center; /* Center images horizontally */
-  padding: 10px; /* Add padding around the container */
   display: flex;
   align-items: center; /* Align items vertically in the center */
   gap: 10px; /* Add space between the paragraph and the image */
