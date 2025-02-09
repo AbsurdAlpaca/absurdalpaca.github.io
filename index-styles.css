@@ -26,3 +26,12 @@ p {
   align-items: center; /* Align items vertically in the center */
   gap: 10px; /* Add space between the paragraph and the image */
 }
+
+.removable {
+}
+
+@media screen and (max-width: 700px) {
+  .removable {
+    display: none;
+  }
+}

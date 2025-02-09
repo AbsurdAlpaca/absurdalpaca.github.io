@@ -35,6 +35,7 @@ p {
   padding: 10px; /* Add padding around the container */
   border-radius: 8px; /* Optional: Add rounded corners */  
   box-shadow: 0 4px 8px #25283D; /* Optional: Add a subtle shadow */
+  gap: 10px; /* Add space between the paragraph and the image */
 }
 .day h3 {
   text-align: center;
@@ -111,6 +112,8 @@ p {
   border-radius: 4px; /* Optional: Add rounded corners */  
 }
 
+.removable-gif {
+}
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -128,5 +131,8 @@ p {
   }
   .row {
     max-width: 100%;
+  }
+  .removable-gif {
+    display: none;
   }
 }
