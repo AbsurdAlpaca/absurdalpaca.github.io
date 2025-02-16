@@ -1,0 +1,151 @@
+body {
+    background-color: #F2F3D9;
+    background-image: url('bg/bg.png');
+}
+  
+  h1, h2 {
+    text-align: center;
+}
+  
+  h3 {
+    text-align: center;
+}
+  
+p {
+    color: #25283D;
+    font-size: large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}  
+
+.spacer {
+  height: 15px;
+}
+
+.header-container {
+    width: 90%;
+    margin: auto;
+    background-image: url('bg/pink-stripes.png');
+    justify-content: center; /* Center images horizontally */
+    padding: 10px; /* Add padding around the container */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add space between the paragraph and the image */
+}
+
+.month {
+    width: 90%;
+    margin: auto;
+    background-image: url('bg/clouds.png');
+    padding: 10px; /* Add padding around the container */
+    border-radius: 8px; /* Optional: Add rounded corners */  
+    box-shadow: 0 4px 8px #25283D; /* Optional: Add a subtle shadow */
+    gap: 10px; /* Add space between the paragraph and the image */
+  }
+  .month h3 {
+    text-align: center;
+  }
+  
+  .entry {
+    padding: 10px; /* Add padding around the container */
+  }
+  
+  .inline-container {
+    justify-content: center; /* Center images horizontally */
+    padding: 10px; /* Add padding around the container */
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add space between the paragraph and the image */
+  }
+  
+  .entry p {
+    padding: 10px;
+    color: #151E3F;
+    flex: 1;
+    text-align: center;
+  }
+
+.container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+  
+.container:hover .image {
+  opacity: 0.3;
+}
+  
+.container:hover .middle {
+  opacity: 1;
+}
+  
+.text {
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%; 
+  border-radius: 4px;  
+}
+
+.removable-gif {
+    border-radius: 0px; 
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inline-container {
+    flex-direction: column;
+  }
+  .row {
+    max-width: 100%;
+  }
+  .removable-gif {
+    display: none;
+  }
+}

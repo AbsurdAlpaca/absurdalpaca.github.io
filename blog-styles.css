@@ -99,7 +99,6 @@ p {
   margin: auto;
 }
 
-
 .row {
   max-width: 50%;
   display: -ms-flexbox; /* IE10 */
@@ -125,6 +124,7 @@ p {
 }
 
 .removable-gif {
+  border-radius: 0px; 
 }
 
 
