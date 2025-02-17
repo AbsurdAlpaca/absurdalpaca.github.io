@@ -41,6 +41,7 @@ p {
     box-shadow: 0 4px 8px #25283D; /* Optional: Add a subtle shadow */
     gap: 10px; /* Add space between the paragraph and the image */
   }
+
   .month h3 {
     text-align: center;
   }
@@ -148,4 +149,13 @@ p {
   .removable-gif {
     display: none;
   }
+}
+
+@media screen and (max-width: 400px) {
+    .middle {
+      display: none;
+    }
+    .text {
+      display: none;
+    }
 }
