@@ -5,6 +5,27 @@
 	<link rel="stylesheet" href="blog-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onClick() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
 </head>
 <body>
 	<div class="header-container">
@@ -20,18 +41,50 @@
 		<img src="gifs/parrot.gif">  
 		<img src="gifs/parrot.gif">
 	</div>
+	<button class="button" id="button" onclick="onClick()">Ew I don't wanna read</button>
+
 	<div class="header-container"
-	style="background-image: url(bg/water.gif);">
-	<img src="gifs/whale.gif" width="40%">
-	<h2> February 2025 </h2>
-	<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> February 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
 	</div>
+	<div class="day">
+		<h3> Feb 19 2025 </h3>
+		<div class="entry">
+			<div> 
+				<p class="hideable">
+					Did some throwing today! I tried taking a timelapse video for the first time~ it looks super cool so I will definitely be taking more!	
+				</p>
+				<div class="inline-container">
+					<video width="400" controls muted autoplay="false">
+						<source src="ceramics-images/02-19-2025_throw.MOV" type="video/mp4">
+					</video>
+					<video width="400" controls muted autoplay="false">
+						<source src="ceramics-images/02-19-2025_throw2.MOV" type="video/mp4">
+					</video>
+				</div>
+				<div class="inline-container">
+					<img class="removable-gif" src="gifs/ufo.gif">
+					<video width="400" controls muted autoplay="false">
+						<source src="ceramics-images/hypnotized.MOV" type="video/mp4">
+					</video>
+					<p class="hideable">
+						The reason I tried to take these videos was because I had to take a video of this. Had me hypnotized for a good while
+					</p>
+					<img src="gifs/ufo.gif">
+				</div>
+				<p>Location: Community Studio | Clay Type: Klamanth Yellow | Average Weight: 1.5kg | Goal: throw bigger</p>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
 	<div class="day">
 		<h3> Feb 15 2025 </h3>
 		<div class="entry">
 			<div class="inline-container">
 				<div>
-					<p>
+					<p class="hideable">
 						I got to pick a two sets of pots! My pet pots (that's what I call them now lol) and  the last set of red
 						clay. Since the red pots were a little too dry for trimming, I decided to use them to test some new glazes. I 
 						actually really like the white glaze on the red clay, I was not expecting speckles! The Macadamia (yellow) has
@@ -52,8 +105,8 @@
 			</div>
 			<div class="inline-container">
 				<div>
-					<img class="removable-gif" src="gifs/star.gif">
-					<p>
+					<img class="hideable" class="removable-gif" src="gifs/star.gif">
+					<p class="hideable">
 						I want to spotlight this pup-pot! I love him so much. I think the studio got a better clear glaze because its feel is almost
 						buttery; really nice. It's also the perfect size for my Jade plant! I'll be a making more of these, I think when I get the 
 						chance to have a market, I'd love to sell stuff like this!
@@ -77,7 +130,7 @@
 						<img src="ceramics-images/02-15-2025_trim2.jpg">
 					</div>
 				</div>
-				<p>
+				<p class="hideable">
 					I didn't take a picture of all the things I trimmed. I was focused on the jars though! I am excited for the garlic
 					jar, I am planning to use the white glaze I just tested! The top doesn't really slot in, I'll have to try more to 
 					get a better hang of it. This time remembered to add a vent to the egg maker!
@@ -89,7 +142,7 @@
 				<div class="imgbox">
 					<img class="center-fit" src="ceramics-images/02-15-2025_throw.jpg">
 				</div>
-				<p>
+				<p class="hideable">
 					And finally, I had an awkward amount of clay left after trimming so I decided to throw it! I did not weigh it, but 
 					I think it was atleast 1.5Kg! It's also tall and didn't collapse! woop woop!
 				</p>
@@ -102,27 +155,26 @@
 		<h3> Feb 09 2025 </h3>
 		<div class="entry">
 			<div class="inline-container">
-				<img class="removable-gif" src="gifs/bubbles.gif">
-				<p>
+				<img class="hideable" class="removable-gif" src="gifs/bubbles.gif">
+				<p class="hideable">
 					Unfortunately my last batch got a bit too dry for trimming. I had to throw out the plate.
 					The rest of the pots got a very basic clean up trim. They are now going through the firing cycles! I forgot to take a picture of the trimmed shapes..
 				</p>
-				<img class="removable-gif" src="gifs/bubbles.gif">
+				<img class="hideable" class="removable-gif" src="gifs/bubbles.gif">
 			</div>
 		</div>
 		<div class="entry">
 			<div class="inline-container">
 				<div>
-					<p>
+					<p class="hideable">
 						I started a new session of throwing. Similar goals as last time: throw some new stuff and some big stuff. I pushed the clay weight even more: got up to 1.5KG BAYBEE.
 						The plate in the back right is the heaviest I've thrown. 
 					</p>
-					<p>
+					<p class="hideable">
 						I probably could have thrown bigger with that amount of clay but honestly just happy I was able to center that quickly and
 						end with some not-collapsed shape.
 					</p>
-
-					<p>
+					<p class="hideable">
 						I've gotten a better hang of closed forms too! My goal with this one is to make a garlic jar. I also made a lid for a second attempt for an egg maker (the last one I made was too small and I forgot to add a vent).
 					</p>
 				</div>
@@ -159,7 +211,7 @@
 				<p>
 					I couldn't do much ceramics because we got a week of snow!! Pep was being a goof and many hot chocs and mochas were made with my mugs :)
 				</p>
-				<video width="400" controls autoplay="false">
+				<video width="400" controls muted loop autoplay="false">
 					<source src="ceramics-images/02-06-2025-snowpep.mov" type="video/mp4">
 				</video>
 				<p>
@@ -193,11 +245,11 @@
 					</div>
 				</div>
 				<div>
-					<p>
+					<p class="hideable">
 						I got to pick up my set of glazes I mentioned on Jan 25th! THEY LOOK SO GOOD!! I am very happy with the mugs. I now have a set! 
 						There is a flaw where some of the rims are not perfectly round because they got deformed when moving them from the wheel. 
 					</p>
-					<p> 
+					<p class="hideable"> 
 						When glazing these I wanted to make sure I show more of the raw red clay. I love every piece that came out of this glaze, 
 						If I make more they will be gifts! 
 					</p>	
@@ -208,15 +260,15 @@
 		<div class="entry">
 			<div class="inline-container">
 				<div>
-					<p>
+					<p class="hideable">
 						I also started a new session of throwing. A few new challenges to push my skills. I want to be able to throw bigger. 
 						So this time I started throwing with clayy 800-900g (I want slowly work my self to 2kg).
 					</p>
-					<p> 
+					<p class="hideable"> 
 						After 4 fairly successful larger throws, i tried speed throwing! went back to ~500g and tried to throw as fast as possible. 
 						I had more failures here. All of them collapsed at some point. Only 2 made it to some workable form. Maybe I need to go slower next time haha.
 					</p>	
-					<p> 
+					<p class="hideable"> 
 						I also threw one plate so I can replace the one sub-par one we have been using at home. I'm am unsure if this one is too thin.. 
 						we will find out! Ideally I will get a set of 6.. I keep managing to procastinate these
 					</p>
@@ -242,8 +294,8 @@
 				<img src="ceramics-images/01-25-2025_trim.jpg" width="250" height="auto">
 				<img src="gifs/skele-toot.gif"/>
 			</div>
-			<p>It was a really gorgeous day today. I loved the sunlight coming through the window right on my wheel.</p>
-			<p>It was still freezing (-2C), but since today's goal was trimming, I didnt need to deal with water much!</p>	
+			<p class="hideable">It was a really gorgeous day today. I loved the sunlight coming through the window right on my wheel.</p>
+			<p class="hideable">It was still freezing (-2C), but since today's goal was trimming, I didnt need to deal with water much!</p>	
 		</div>
 		<div class="entry">
 			<div class="inline-container">
@@ -259,11 +311,11 @@
 					</div>
 				</div>
 				<div>
-					<p>
+					<p class="hideable">
 						I decided to make a new puppy planter with the round pot. I love the Pep one i made last year, and wanted to build on that. the base was a little too thin to trim a 
 						a pretty base so i ended up with a rounded-wobbly base. I decided to try putting on little feet for the first time! I still think it is wobbly but atleast there are little foots!
 					</p>
-					<p> 
+					<p class="hideable"> 
 						I have a friends birthday who has a dog and love plants so i was planning to make this for her. 
 						But.. i love this alot T-T so I am going to try and make another one for both of us lol.	
 					</p>	
@@ -275,7 +327,7 @@
 			<div class="inline-container">
 				<img class="removable-gif" src="gifs/eyeball.gif">
 				<div>
-					<p>
+					<p class="hideable">
 						This the result of today's trim session. Most of the time was with the puppy planter. the small mug will be for more glaze testing. I was hoping the big pot i made could replace our current container for cooking spatulas but the end result is going to be too small.
 						next time i got to go even bigger!
 					</p>
@@ -295,8 +347,14 @@
 			<div class="inline-container">
 				<img class="removable-gif" src="gifs/skull-rotate.gif">
 				<div>
-					<p>Threw these pots at home after I stupidly managed to scrape the knuckles on my right hand. Turns out I really need those while throwing! Also IT'S FREEZING. THE CLAY FROZE. I am boiling water and using that to throw and still end up with extremely cold water within minutes. I am still trying to figure out a good clay reclaim process for my home studio. It is so much harder when it is so cold that the water does not leave clay reclaim. I may reduce throwing at home until tempratures increase T-T</p>
-					<p> I threw these with the intention of having some more glaze experiments. No idea how much I threw with. I think the largest pot here is a new weight best!</p>	
+					<p class="hideable">
+						Threw these pots at home after I stupidly managed to scrape the knuckles on my right hand. 
+						Turns out I really need those while throwing! Also IT'S FREEZING. THE CLAY FROZE. I am boiling water and using that to throw and still end up with extremely cold water within minutes. I am still trying to figure out a good clay reclaim process for my home studio. It is so much harder when it is so cold that the water does not leave clay reclaim. I may reduce throwing at home until tempratures increase T-T
+					</p>
+					<p class="hideable">
+						I threw these with the intention of having some more glaze experiments. No idea how much I threw with. 
+						I think the largest pot here is a new weight best!
+					</p>	
 				</div>
 				<div class="imgbox">
 					<img class="center-fit" src="ceramics-images/01-22-2025_throw.jpg">
@@ -315,8 +373,13 @@
 			<div class="inline-container">
 				<img class="removable-gif" src="gifs/crab.gif">
 				<div>
-					<p>Threw these pots after a long end of year gap and also recovering from covid (great start to the year..). I timed myself for these, 7 pots of within 2hrs! New personal best. I really liked a wide 16oz mug I made a month ago so my goal here was to make some more similar to that. Hopefully I'll have a set of 4 for myself and then I can make more as gifts (and maybe a sale some point in the future??). </p>
-					<p>I am also experimenting with bowl shapes for different purposes. Currently trying for the perfect cereal&milk bowl and the perfect ramen bowl.</p>	
+					<p class="hideable">
+						Threw these pots after a long end of year gap and also recovering from covid (great start to the year..). 
+						I timed myself for these, 7 pots of within 2hrs! New personal best. I really liked a wide 16oz mug I made a month ago so my goal here was to make some more similar to that. Hopefully I'll have a set of 4 for myself and then I can make more as gifts (and maybe a sale some point in the future??). 
+					</p>
+					<p class="hideable">I am also experimenting with bowl shapes for different purposes. 
+						Currently trying for the perfect cereal&milk bowl and the perfect ramen bowl.
+					</p>	
 				</div>
 				<div class="imgbox">
 					<img class="center-fit" src="ceramics-images/01-16-2025_trim.jpg">
@@ -341,8 +404,13 @@
 					</div>
 				</div>
 				<div >
-					<p>I got to pick up some pots I set to glaze fire earlier in the week. These were thrown back in early december and I didn't have the chance to glaze them until after holiday madness. I was excited for these because they used some new glazes I bought for myself: Green Tea, Alabaster, Capri Blue and Sea Salt.</p>	
-					<p>Mostly underwhelmed by the outcome. I was expecting some cooler movement in the glazes based on what I had found online. These ended up a little dull and the texture is not glossy at all. My first guess is that I did not use enough glaze and need more. If that doesnt work I may end up buying a kiln to experiment with firing..</p>	
+					<p class="hideable">
+						I got to pick up some pots I set to glaze fire earlier in the week. 
+						These were thrown back in early december and I didn't have the chance to glaze them until after holiday madness. I was excited for these because they used some new glazes I bought for myself: Green Tea, Alabaster, Capri Blue and Sea Salt.
+					</p>	
+					<p class="hideable">Mostly underwhelmed by the outcome. I was expecting some cooler movement in the glazes based on what I had found online. 
+						These ended up a little dull and the texture is not glossy at all. My first guess is that I did not use enough glaze and need more. If that doesnt work I may end up buying a kiln to experiment with firing..
+					</p>	
 				</div>
 				<img src="gifs/bird.gif">
 			</div>
