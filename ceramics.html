@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
 	var isHide = false;
-    function onClick() {
+    function onHideText() {
 		let list = document.querySelectorAll('.hideable');
 		if (isHide)
 		{
@@ -28,6 +28,7 @@
     </script>
 </head>
 <body>
+	<button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
 	<div class="header-container">
 		<img src="gifs/parrot.gif">  
 		<a href="get-pepped.html">
@@ -41,8 +42,6 @@
 		<img src="gifs/parrot.gif">  
 		<img src="gifs/parrot.gif">
 	</div>
-	<button class="ramble-button" id="button" onclick="onClick()">Ew I don't wanna read</button>
-
 	<div class="header-container"
 		style="background-image: url(bg/water.gif);">
 		<img src="gifs/whale.gif" width="40%">
