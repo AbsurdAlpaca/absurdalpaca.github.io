@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ceramics Blog</title>
+	<link rel="stylesheet" href="blog-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onHideText() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Feb2025.html" class="ramble-button">Feb 2025</a>
+    </div>
+	<div class="header-container">
+		<img src="gifs/parrot.gif">  
+		<a href="get-pepped.html">
+			<img src="gifs/shifty.gif">
+		</a>
+		<img src="gifs/parrot.gif">
+		<a href="index.html">
+			<h1>Rooch's Ceramics Blog</h1>
+		</a>
+		<img src="gifs/parrot.gif">
+		<img src="gifs/parrot.gif">  
+		<img src="gifs/parrot.gif">
+	</div>
+	<div class="header-container"
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> March 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+	</div>
+	<div class="day">
+		<h3> March 16 2025 </h3>
+		<div class="entry">
+			<div> 
+				<p class="hideable">
+					Recorded this whole throw session in one go!	
+				</p>
+				<div class="inline-container">
+					<video controls muted>
+						<source src="ceramics-images/03-16-2025_throw2.mp4" type="video/mp4">
+					</video>
+				</div>
+				<p>Location: Home | Clay Type: Seamix | Average Weight: 1.5kg | Goal: Throw new shapes</p>
+			</div>
+		</div>
+	</div>
+    <div class="spacer"></div>
+	<div class="day">
+		<h3> March 4 2025 </h3>
+		<div class="entry">
+			<div> 
+				<p class="hideable">
+					Did some throwing at home today! Cleaned up my garage and was able to use backyard hose without freezing to death!	
+				</p>
+				<div class="inline-container">
+					<video controls muted>
+						<source src="ceramics-images/03-04-2025_throw.mp4" type="video/mp4">
+					</video>
+					<video controls muted>
+						<source src="ceramics-images/03-04-2025_throw2.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="inline-container">
+					<img class="removable-gif" src="gifs/ufo.gif">
+                    <div class="imgbox">
+                        <img class="center-fit" src="ceramics-images/03-04-2025_glaze.jpg">
+                    </div>
+					<p class="hideable">
+						I also picked up a batch of my glaze pots from the studio. I also loved how all these turned out!
+                        The garlic jar lid isn't very functional so at some point I want to remake it. 
+					</p>
+					<img src="gifs/ufo.gif">
+				</div>
+				<p>Location: Home | Clay Type: Seamix | Average Weight: 1.5kg | Goal: Throw new shapes</p>
+			</div>
+		</div>
+	</div>
+    <div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Feb2025.html" class="ramble-button">Feb 2025</a>
+    </div>
+</body>
+</html>
