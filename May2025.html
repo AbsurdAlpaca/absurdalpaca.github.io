@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ceramics Blog</title>
+	<link rel="stylesheet" href="blog-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onHideText() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Apr2025.html" class="ramble-button">April 2025</a>
+    </div>
+	<div class="header-container">
+		<img src="gifs/parrot.gif">  
+		<a href="get-pepped.html">
+			<img src="gifs/shifty.gif">
+		</a>
+		<img src="gifs/parrot.gif">
+		<a href="index.html">
+			<h1>Rooch's Ceramics Blog</h1>
+		</a>
+		<img src="gifs/parrot.gif">
+		<img src="gifs/parrot.gif">  
+		<img src="gifs/parrot.gif">
+	</div>
+	<div class="header-container"
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> May 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+	</div>
+    <div class="day">
+		<h3> May 24th 2025 </h3>
+		<div class="entry">
+            <p class="hideable">
+               The weather was perfect, so i took my wheel out and threw in the backyard today. Felt so in my element and had a ton of fun! Pep had a great time too
+            </p>
+			<div class="row" style="max-width: 100%;"> 
+				<div class="column">
+					<img src="ceramics-images/05-24-2025_throw.jpg">
+				</div>
+				<div class="column">
+					<img src="ceramics-images/05-24-2025_throw2.jpg">
+				</div>
+			</div>
+			<p class="hideable">
+				This is also some leftover porcelein I've had hanging out for a couple months, so my goal to finish it up.
+				It was a warm day out so the porcelein was drying incredibly fast. By the time I finished 4 pots, I could start trimming them!
+			</p>
+			<div class="inline-container"> 
+				<video controls muted>
+					<source src="ceramics-images/05-24-2025_throw.mp4" type="video/mp4">
+				</video>
+				<video controls muted>
+					<source src="ceramics-images/05-24-2025_throw2.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="inline-container"> 
+				<div>
+					<p class="hideable">
+						One new thing I tried was throwing off the hump. I tried it once last october in attempt to make a lot of Diwali Diyas but it was a total failure. 
+						I had a rough start here too but started to get a hang of it.
+					</p>
+					<p> Weirdly, the hardest part isn't centering but the final step of cutting off the pot. It's not
+						very noticable in this timelapse but everytime I cut off a finished pot it's a bit of a miracle I did not destroy it. I feel like it would be super fun when 
+						I get a better hang of it, so I'll definitely be trying more often. These pieces are gonna be perfect candidates for future glaze experiments.
+					</p>
+				</div>
+				<video controls muted>
+					<source src="ceramics-images/05-24-2025_throw3.mp4" type="video/mp4">
+				</video>
+			</div>
+			<p>Location: Home | Clay Type: Porcelein | Goal: Try out throwing off the hump </p>
+		</div>
+	</div>
+	<div class="spacer"></div>
+    <div class="day">
+		<h3> May 20th 2025 </h3>
+		<div class="entry">
+            <p class="hideable">
+                Yay! I can finally try a new clay! I picked up Clay Art Studio's Plum Black. It should fire to ~black~ with some purplish undertones?
+            </p>
+			<div class="inline-container">                
+				<div class="imgbox">
+					<img class="center-fit" src="ceramics-images/05-20-2025_throw.jpg">
+				</div>
+				<div>
+                    <p class="hideable">
+                        This clay feels incredible to throw with. It just listens and feels really good. These pieces are way bigger than what I throw on average and it was not a struggle
+						at all. Super excited to keep throwing with this in the future! 
+					</p>
+                    <p class="hideable">
+                        The Klamanth yellow in the back is from the last session, it was still to wet to trim so its just hanging out in the back drying..
+					</p>
+				</div>
+			</div>
+			<p class="hideable">
+				I took some cool timelapses of throwing with the clay: 
+			</p>
+			<div class="inline-container"> 
+				<video controls muted>
+					<source src="ceramics-images/05-20-2025_throw.mp4" type="video/mp4">
+				</video>
+				<video controls muted>
+					<source src="ceramics-images/05-20-2025_throw2.mp4" type="video/mp4">
+				</video>
+			</div>
+			<p>Location: Community Studio | Clay Type: Plum Black | Goal: Try out new clay! </p>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="day">
+		<h3> May 16th </h3>
+		<div class="entry">
+			<p class="hideable">
+				Ok, attempt 2 at finishing up all my remaining clay. I re-used all the clay I failed with last time Thankfully, because it got a lot of water to soak in 
+				over the past couple days, it was way easier to work with. I decided to use all that clay for one piece, hopefully this one will be big enough for Max's 
+				snake plant!	
+			</p>
+			<div class="inline-container">
+				<video controls muted>
+					<source src="ceramics-images/05-16-2025_throw.mp4" type="video/mp4">
+				</video>
+			</div>
+			<p>Location: Studio | Clay Type: Klamanth Yellow | Goal: Finish up the clay</p>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="day">
+		<h3> May 11th </h3>
+		<div class="entry">
+			<p class="hideable">
+				Holy guacamole what a disaster throw day. I wanted to finish off the remaining Klamanth Yellow and it REFUSED to co-operate. I wired through EVERY PIECE, the
+				clay got super dry and tough which also did not help. Enjoy the timelapse of me failing.	
+			</p>
+			<div class="inline-container">
+				<video controls muted>
+					<source src="ceramics-images/05-11-2025_throw.mp4" type="video/mp4">
+				</video>
+			</div>
+			<p>Location: Studio | Clay Type: Klamanth Yellow | Goal: Finish up the clay</p>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="day">
+		<h3> May 7th </h3>
+		<div class="entry">
+			<div class="inline-container">
+				<div class="imgbox">
+					<img class="center-fit" src="ceramics-images/05-07-2025_throw.jpg">
+				</div>
+				<div>
+					<p class="hideable">
+						I want to try a new clay but I have too much left over clay to deal with. So, I shall try to throw whatever comes to my mind at the moment.
+					</p>
+				</div>
+			</div>
+			<p class="hideable">
+				Recorded a timelapse for the Klamanth Yellow piece! I want to make a pot big enough for Max's snake plant. I think this one ended up too wide and short. 
+			</p>
+			<div class="inline-container">
+				<video controls muted>
+					<source src="ceramics-images/05-07-2025_throw.mp4" type="video/mp4">
+				</video>
+			</div>
+			<p>Location: Studio | Clay Type: Fool's Gold and Klamanth Yellow | Goal: Finish up the clay</p>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="day">
+		<h3> May 3rd 2025 </h3>
+		<div class="entry">
+            <p class="hideable">
+                Got to pick up what I glazed at the end of last month. I didn't do anything else, I was just really excited to see how they turned out lol.
+				There are some that look really nice and some that are meh. 
+            </p>
+			<div class="inline-container">
+				<div class="row" style="max-width: 100%;"> 
+					<div class="column">
+					  <img src="ceramics-images/05-03-2025_glaze.jpg">
+					  <img src="ceramics-images/05-03-2025_glaze3.jpg">
+					</div>
+					<div class="column">
+						<img src="ceramics-images/05-03-2025_glaze2.jpg">
+						<img src="ceramics-images/05-03-2025_glaze6.jpg">
+					</div>
+				</div>
+				<div>
+					<p class="hideable"> 
+						I really love the pots in the first picture. The Spectrum semi-transparent glazes are super bright and pretty. The Blue Splatterware + Clear glaze worked reallly well too, 
+						the bowl+handle is gonna be my perfect dessert bowl.
+					</p>
+					<p class="hideable">
+						I did not like how the Blue Hydrangea turned out; super blotchy and weird again. I think I want to try that on a darker clay next. 
+						The plate is also meh.. maybe I needed more honey flux to see the full effect of multiple glazes overlayed. 
+					</p>
+				</div>
+			</div>
+			<div class="inline-container">
+				<div class="row" style="max-width: 100%;"> 
+					<div class="column">
+					  <img src="ceramics-images/05-03-2025_glaze5.jpg">
+					</div>
+					<div class="column">
+					  <a href="get-pepped.html">
+						<img src="ceramics-images/05-03-2025_glaze4.jpg">
+					  </a>
+					</div>
+				</div>
+				<div>
+					<p class="hideable">
+						The Honey Flux combos look AMAZING. I really like how the Green Tea + Honey Flux combo turned out. The mug is unfortunately super bottom heavy and I think I have realized
+						I dont like it when a handle touches the bottom of the mug. It does not store well and feels awkward to hold. 
+					</p>
+					<p class="hideable">
+						The final two testers turned out really cool. The Coral Pink + Honey Flux looks really neat. I'm excited finish some pieces with that.
+						The semi-transparent + honey flux is interesting too, I am not sure how much I like it yet.
+					</p>
+				</div>
+			</div>
+			<p>Location: Home | Clay Type: Porcelein | Goal: New glazes</p>
+		</div>
+	</div>
+    <div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Apr2025.html" class="ramble-button">April 2025</a>
+    </div>
+</body>
+</html>
