@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ceramics Blog</title>
+	<link rel="stylesheet" href="blog-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onHideText() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="June2025.html" class="ramble-button">June 2025</a>
+    </div>
+	<div class="header-container">
+		<img src="gifs/parrot.gif">  
+		<a href="get-pepped.html">
+			<img src="gifs/shifty.gif">
+		</a>
+		<img src="gifs/parrot.gif">
+		<a href="index.html">
+			<h1>Rooch's Ceramics Blog</h1>
+		</a>
+		<img src="gifs/parrot.gif">
+		<img src="gifs/parrot.gif">  
+		<img src="gifs/parrot.gif">
+	</div>
+	<div class="header-container"
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> July 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+	</div>
+
+    <div class="day">
+	<h3> Glaze Results </h3>
+		<div class="entry">
+			<div> 
+				<p class="hideable">
+					This is what I was most excited for: my mug set gift! They all turned out perfect! There are all Honey Flux layered
+					 with the following colors:
+				</p>
+				<div class="inline-container"> 
+					<div>
+						<p class="hideable">
+							Norse Blue
+						</p>
+						<p class="hideable">
+							Green Tea (this one got some bubbling at the bottom but not too much)
+						</p>
+						<p class="hideable">
+							Egglpant
+						</p>
+						<p class="hideable">
+							Chun Plum
+						</p>
+						<p class="hideable">
+							Coral Pink (The color didnt show much, pretty sure I wont get this glaze again)
+						</p>
+						<p class="hideable">
+							Just plain ol' honey flux
+						</p>
+						<p class="hideable">
+							Chun Plum: a beautiful deep purple that creates these pretty deep purple streaks in white when 
+							layered with Honey Flux.
+						</p>
+					</div>  
+					<div class="row" style="max-width: 100%;"> 
+						<div class="column">
+							<img src="ceramics-images/07-11-2025_glaze2.jpg">
+							<a href="get-pepped.html">
+							  <img src="ceramics-images/07-11-2025_glaze3.jpg">
+							</a>
+						</div>
+						<div class="column">
+							<img src="ceramics-images/07-11-2025_glaze4.jpg">
+						</div>
+					</div>
+				</div>
+				<div class="inline-container">                
+					<div class="imgbox">
+						<img class="center-fit" src="ceramics-images/07-11-2025_glaze.jpg">
+					</div>
+					<p class="hideable">
+						These two are probably my favorite from the bunch. They are new glazes I got! Spectrum floating glazes (ooOOooO). They
+						are such bright colors and mix with each other really well. I love both of these A LOT. The soap dispenser could be a better
+						in throw quality, the piece dried too much so i could not trim it well, it has a bit of a wobbly base. But the texture and look
+						of the piece is amazing. That one is Alabaster under all the spectrum floats, instead of my usual honey flux. 
+					</p>
+				</div>
+				<p class="hideable">
+					The rest are my own pieces that i had thrown a while back but didnt want to glaze until i got all that testing completed. The spacey look
+					is actually Blue Hydrangea, IT'S SO GOOD ON DARK CLAY. It also layers very well, Eggplant+BlueHydrangea on plum black is very pretty.
+				</p>
+				<div class="row" style="max-width: 100%;"> 
+					<div class="column">
+						<img src="ceramics-images/07-06-2025_glaze.jpg">
+					</div>
+					<div class="column">
+						<img src="ceramics-images/07-06-2025_glaze2.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div style="display: flex;">
+        <a href="index.html" class="ramble-button">Home</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="June2025.html" class="ramble-button">June 2025</a>
+    </div>
+</body>
+</html>
