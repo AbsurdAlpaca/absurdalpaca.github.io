@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ceramics Blog</title>
+	<link rel="stylesheet" href="blog-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onHideText() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="Oct2025.html" class="ramble-button">October 2025</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Aug2025.html" class="ramble-button">August 2025</a>
+    </div>
+	<div class="header-container">
+		<img src="gifs/parrot.gif">  
+		<a href="get-pepped.html">
+			<img src="gifs/shifty.gif">
+		</a>
+		<img src="gifs/parrot.gif">
+		<a href="index.html">
+			<h1>Rooch's Ceramics Blog</h1>
+		</a>
+		<img src="gifs/parrot.gif">
+		<img src="gifs/parrot.gif">  
+		<img src="gifs/parrot.gif">
+	</div>
+	<div class="header-container"
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> September 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+	</div>
+    <div class="day">
+		<div class="entry">
+			<div> 
+				<p class="hideable">
+					As mentioned before, I had no time for ceramics this month! I did go back to India (Bangalore, Hyderabad, Mumbai) for a few weeks
+					so here are some food pics!
+				</p> 
+				<div class="inline-container"> 
+					<div class="row" style="max-width: 100%;"> 
+						<div class="column">
+							<img src="ceramics-images/2025/09/food.jpeg">
+							<img src="ceramics-images/2025/09/food2.jpeg">
+							<img src="ceramics-images/2025/09/food3.jpeg">
+							<img src="ceramics-images/2025/09/food4.jpeg">
+						</div>
+						<div class="column">
+							<img src="ceramics-images/2025/09/food5.jpeg">
+							<img src="ceramics-images/2025/09/food6.jpeg">
+							<img src="ceramics-images/2025/09/food7.jpeg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div style="display: flex;">
+        <a href="Oct2025.html" class="ramble-button">October 2025</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="Sep2025.html" class="ramble-button">September 2025</a>
+    </div>
+</body>
+</html>

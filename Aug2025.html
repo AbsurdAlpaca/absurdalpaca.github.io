@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ceramics Blog</title>
+	<link rel="stylesheet" href="blog-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+	var isHide = false;
+    function onHideText() {
+		let list = document.querySelectorAll('.hideable');
+		if (isHide)
+		{
+			document.getElementById("button").innerHTML = ("Ew I don't wanna read");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='block'    
+			}
+		}
+		else 
+		{
+			document.getElementById("button").innerHTML = ("Actually, I can read a bit");
+			for ( i = 0; i < list.length; i++ ) {
+				list[i].style.display ='none'    
+			}
+		}
+		isHide = !isHide;
+    }
+    </script>
+</head>
+<body>
+    <div style="display: flex;">
+        <a href="Sep2025.html" class="ramble-button">September 2025</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="July2025.html" class="ramble-button">July 2025</a>
+    </div>
+	<div class="header-container">
+		<img src="gifs/parrot.gif">  
+		<a href="get-pepped.html">
+			<img src="gifs/shifty.gif">
+		</a>
+		<img src="gifs/parrot.gif">
+		<a href="index.html">
+			<h1>Rooch's Ceramics Blog</h1>
+		</a>
+		<img src="gifs/parrot.gif">
+		<img src="gifs/parrot.gif">  
+		<img src="gifs/parrot.gif">
+	</div>
+	<div class="header-container"
+		style="background-image: url(bg/water.gif);">
+		<img src="gifs/whale.gif" width="40%">
+		<h2> August 2025 </h2>
+		<img src="gifs/whale.gif" width="40%" style="transform: scaleX(-1);">
+	</div>
+    <div class="day">
+		<h3> Glaze Results </h3>
+		<div class="entry">
+			<div> 
+				<div class="inline-container"> 
+                    <p class="hideable">
+                        Some new grill cooks with my brand new plate! We tried to grill a steak in the first one. and then blackened fish
+                        in the second. It is super easy and fast to get these done. Becoming a huge fan of grilling as a result. 
+                    </p>
+					<div class="row"> 
+						<div class="column">
+							<img src="ceramics-images/2025/08/food.jpeg">
+						</div>
+						<div class="column">
+							<img src="ceramics-images/2025/08/food2.jpeg">
+						</div>
+					</div>
+				</div>
+
+				<p class="hideable">
+					I actually did not have any glaze results this month. It's been a busy month of summer activities! Most of my potting
+                    time went into quick throwing/trimming sessions. I also have a busy couple months of work and travel coming up so I just needed a lot
+                    of bisqued pieces at home to have a way to take breaks from everything else. 
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="day">
+		<h3> Throwing and Trimming </h3>
+		<div class="entry">
+			<div>
+                <div class="inline-container">
+                    <div>
+                        <p class="hideable">
+                            I finished up my bag of Bmix from last month, made some more random shapes with it!
+                        </p>
+                        <p class="hideable">
+                            One goal I had from this month was to make some ghost luminaires for halloween 
+                            I know, I know... halloween prep in AUGUST?? but I am busy next month 
+                            and I need atleast 3-4 weeks of prep T-T.
+                        </p>
+                    </div>
+                    <div class="row"> 
+                        <div class="column">
+                            <img src="ceramics-images/2025/08/throw.jpeg">
+                            <img src="ceramics-images/2025/08/trim.jpeg">
+                        </div>
+                        <div class="column">
+                        <a href="get-pepped.html">
+                            <img src="ceramics-images/2025/08/throw3.jpeg">
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="inline-container">
+                    <div class="row"> 
+                        <div class="column">
+                            <img src="ceramics-images/2025/08/trim3.jpeg">
+                            <img src="ceramics-images/2025/08/trim.jpeg">
+                            <img src="ceramics-images/2025/08/trim4.jpeg">
+                        </div>
+                        <div class="column">
+                            <img src="ceramics-images/2025/08/trim2.jpeg">
+                            <a href="get-pepped.html">
+                                <img src="ceramics-images/2025/08/throw2.jpeg">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="hideable">
+                            As soon as I finished up the Bmix bag of clay a new kind of Porcelain clay showed up in the studio. 
+                            This one is called "English Grolleg 6"; so fancy. It also pricier than the other porcelain available
+                            so I am really curious how it compares with the previous porcelain I have used.     
+                        </p>
+                        <p class="hideable">
+                            I think this clay felt super nice to throw, I had no troubles with it. I could already tell 
+                            during the throwing phase that the finish on this clay is going to be super soft. Excited to see how
+                            this clay behaves!
+                        </p>
+                        <p class="hideable">
+                            I threw another ring dish in this clay. For ring dishes I realized it is better to just have the thrown piece
+                            to require no trimming, It doesn't need a fancy foot anyway and it prevents any warping. Now with the new clay
+                            it is going to feel even better!
+                        </p>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div style="display: flex;">
+        <a href="Sep2025.html" class="ramble-button">September 2025</a>
+        <button class="ramble-button" id="button" onclick="onHideText()">Ew I don't wanna read</button>
+        <a href="July2025.html" class="ramble-button">July 2025</a>
+    </div>
+</body>
+</html>
